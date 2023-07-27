@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    
+}
+img{
+    width: 500px;
+    height: 400px;
+    border: 2px solid black;
+}
+.nav-bar{
+background-color: black;
+display: flex;
+/* position: fixed; */
+height: 40px;
+justify-content: center;
+    align-items: center;
+}
+.nav-bar ul li{
+    text-decoration: none; 
+     color: white;
+    display: inline;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+.java-container{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.java-container h1{
+    text-align: center;
+    
+}
+.java-container h2{
+    text-align: center;
+    
+}
+.java-container p{
+    text-align: center;
+}
+.java-container ul{
+    margin-left: 40px;
+}
+.python-container{
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.python-container h1{
+    text-align: center;
+}
+.python-container h2{
+    text-align: center;
+}
+.python-container p{
+    text-align: center;
+}
+.python-container ul{
+    margin-left: 40px;
+}
+.javacript-container{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+.javacript-container h1{
+    text-align: center;
+}
+.javacript-container h2{
+    text-align: center;
+}
+.javacript-container p{
+    text-align: center;
+}
+.javacript-container ul{
+    margin-left: 40px;
+}
+.php-container{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.php-container h1{
+    text-align: center;
+}
+.php-container h2{
+    text-align: center;
+}
+.php-container p{
+    text-align: center;
+}
+.php-container ul{
+    margin-left: 40px;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+   background-color: yellowgreen;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-container">
+            <nav class="nav-bar">
+                <ul>
+                    <a href="#java-container"><li>java</li></a>
+                    <a href="#python-container"><li>python</li></a>
+                    <a href="#javascript-container"><li>javascript</li></a>
+                    <a href="#php-container"><li>php</li></a>
+                    <input type="text" id="srch" placeholder="search here">
+                </ul>
+            </nav>
+        </div>
+       <div class="java-container">
+          <div class="java-left-image">
+            <img src="./java.webp" alt="java-image">
+          </div>
+          <div class="java-notes">
+            <h1>Java</h1>
+             <p>Java is an object-oriented programming language, created in 1995 by Sun Microsystems. It was designed as an alternative to the extremely difficult C ++ distinguished by the absence of both systematicity and logical restrictions in software development. The new approach also had to solve other urgent issues, like security, cross-platform, versatility, etc.</p>
+             <h2>uses</h2>
+             <ul>
+                <li>It is used for developing Android Apps</li>
+                <li>Helps you to create Enterprise Software</li>
+                <li>Wide range of Mobile java Applications</li>
+                <li>Scientific Computing Applications</li>
+                <li>Use for Big Data Analytics</li>
+                <li>Java Programming of Hardware devices</li>
+             </ul>
+         </div>
+       </div>
+       <div class="python-container">
+            <div class="python-notes">
+                <h1>Python</h1>
+                <p>Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.</p>
+                <h2>uses</h2>
+              <ul>
+                <li>Data analysis and machine learning</li>
+                <li>Web development</li>
+                <li>Automation or scripting</li>
+                <li>Software testing and prototyping</li>
+                <li>Everyday tasks</li>
+              </ul>
+            </div>
+            <div class="python-right-image">
+                <img src="./python.jpg" alt="python-image"> 
+            </div>
+       </div>
+       <div class="javacript-container">
+            <div class="javascript-left-image">
+                <img src="./javascript.jpg" alt="javascript-image">
+            </div>
+            <div class="javascript-notes">
+                <h1>javascript</h1>
+                <p>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)</p>
+                <h2>uses</h2>
+                <ul>
+                    <li>It can be used both in the front-end and back-end of web development</li>
+                    <li>Serves everyone from beginners to intermediate and even advanced developers</li>
+                    <li>It does not need an environment setup</li>
+                    <li>Can run on all devices</li>
+                    <li>Transformed web browsers into application platforms</li>
+                </ul>
+            </div>
+       </div>
+       <div class="php-container">
+          <div class="php-notes">
+             <h1>PHP</h1>
+             <p>PHP is an open-source, interpreted, and object-oriented scripting language that can be executed at the server-side. PHP is well suited for web development. Therefore, it is used to develop web applications (an application that executes on the server and generates the dynamic page.).</p>
+          
+             <h2>uses</h2>
+             <ul>
+              <li>PHP can generate dynamic page content.</li>
+              <li>PHP can create, open, read, write, delete, and close files on the server.</li>
+              <li>PHP can collect form data.</li>
+              <li>PHP can send and receive cookies.</li>
+              <li>PHP can add, delete, modify data in your database.</li>
+             </ul>
+          </div>
+          <div class="php-right-image">
+            <img src="./php.jpg" alt="php-image">
+          </div>
+       </div>
+    </div>
+    <footer>
+        <p>Author: xyz abs<br>
+        <a href="#">demono1@gmail.com</a></p>
+      </footer>
+      
+</body>
+</html>
